@@ -1,1 +1,12 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
+//@import "../node_modules/bootstrap/scss/bootstrap";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Questrial, sans-serif;
+    //background-color: aqua;
+    background-image: url(../../assets/img/background.png);
+    // background-repeat: no-repeat;
+    background-size: cover;
+}

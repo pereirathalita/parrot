@@ -1,7 +1,9 @@
+// import "./styles.scss";
+
 export default function FormLogin() {
-    return(
-        <div>
-            Hello Word!
-        </div>
-    )
+  return (
+    <main>
+        
+    </main>
+  );
 }
