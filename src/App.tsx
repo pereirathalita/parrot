@@ -3,14 +3,16 @@ import './App.css';
 import TelaLogin from './components/Login';
 import TelaCadastro from './components/Cadastro';
 import "./assets/styles/global.scss";
+import Header from './components/Header';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <TelaCadastro />
+      {/* <TelaCadastro /> */}
       {/* <TelaLogin /> */}
+      <Header />
     </div>
   )
 }

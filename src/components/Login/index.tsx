@@ -1,9 +1,8 @@
-import "../../components/Login";
 import "./styles.scss";
 import logo from "../../assets/img/logo-colorido.png";
 import { Button } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
-import TelaCadastro from "../Cadastro";
+// import TelaCadastro from "../Cadastro";
 
 function TelaLogin() {
   return (
