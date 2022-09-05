@@ -2,15 +2,15 @@ import "../../components/Login";
 import "./styles.scss";
 import logo from "../../assets/img/logo-colorido.png";
 import { Button } from "react-bootstrap";
-import Form from "react-bootstrap/Form";
+import { Form, } from "react-bootstrap";
 
 function TelaCadastro() {
   return (
     <div className="container">
       <div>
-        <img src={logo} alt="Logo" />
+        <img src={logo} alt="Logo" className="imgLogo" />
       </div>
-      <div>
+      <div className="cadastro">
         <h2>CADASTRO</h2>
       </div>
       <Form>
@@ -32,7 +32,7 @@ function TelaCadastro() {
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Control type="password" placeholder="link da foto" />
         </Form.Group>
-        <Button>entrar</Button>
+        <Button className="botao">entrar</Button>
       </Form>
     </div>
   );

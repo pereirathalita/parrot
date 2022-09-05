@@ -9,7 +9,8 @@ function App() {
 
   return (
     <div className="App">
-      <TelaLogin />
+      <TelaCadastro />
+      {/* <TelaLogin /> */}
     </div>
   )
 }

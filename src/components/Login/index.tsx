@@ -15,7 +15,7 @@ function TelaLogin() {
         <h2>LOGIN</h2>
       </div>
       <Form>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Group className="form-control mb-3" controlId="formBasicEmail">
           <Form.Control type="email" placeholder="Email" />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -24,7 +24,7 @@ function TelaLogin() {
         <Button className="botao">entrar</Button>
       </Form>
       <div className="cadastro">
-        <p onClick={ TelaCadastro }>cadastre-se</p>
+        <a href="#">cadastre-se</a>
       </div>
     </div>
   );
