@@ -1,12 +1,23 @@
-import "../../components/Login";
-import logo from "../../assets/img/logo-colorido.png";
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
+import "./styles.scss"
+import Logo from "../../assets/img/logo-horizontal-colorido.png";
 
-function Header() {
-  return (
-    <div>
-        difjidoj
-    </div>
-  );
+
+export default function Header() {
+      return (
+        <Navbar className="header">
+          <Container fluid>
+            <Navbar.Brand><img className="w-50" src={Logo} alt="Logo" /></Navbar.Brand>
+            <Navbar.Toggle />
+            <Navbar.Collapse className="justify-content-end">
+            <Navbar.Text>
+                <span className="user-text">Olá Usuário | </span> <a href="#login">sair</a>
+              </Navbar.Text>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      );
 }
-
-export default Header;
