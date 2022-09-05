@@ -23,11 +23,11 @@ function TelaLogin() {
            <Form.Group className="mb-3 mt-4" controlId="formBasicPassword">
              <Form.Control type="password" placeholder="password" />
            </Form.Group>
-           <Button className="buttonEntrar" variant="primary" type="submit">
-             entrar
-           </Button>
-           <br />
-           <a href="#">casdastre-se</a>
+           <Form.Group className="mb-3 mt-4" controlId="formBasicName">
+             <Form.Control className="botao" type="submit" value="entrar" />
+           </Form.Group>
+           {/* <br /> */}
+           <a href="#">cadastre-se</a>
          </Form>
          </Card.Body>
           </Card>

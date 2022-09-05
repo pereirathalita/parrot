@@ -15,8 +15,13 @@ body {
   width: 32% !important;
 }
 
-.buttonEntrar {
-  background-color: $accent-color !important;
-  border: $accent-color !important;
-  border-radius: 10px;
+.botao {
+  font-size: 1.2rem;
+  color: black;
+  background-color: #76bb4c !important;
+  border: #76bb4c !important;
+  border-radius: 0.625rem;
+  text-align: center;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }

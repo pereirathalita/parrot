@@ -1,42 +1,36 @@
 @import "../../assets/styles/global.scss";
 
 body {
-    background-image: url(../../assets/img/background.png);
-    justify-content: center;
-  }
-  
-  .container {
-    background-color: #ffffff;
-    border: 1px solid #c5c5c5;
-    text-align: center;
-  }
-  
-  .imgLogo {
-    padding: 35px 35px 20px 35px;
-    max-width: 80%;
-  }
-  
-  .cadastro {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-    color: #000000;
-    padding-bottom: 30px;
-  }
-  
-  .botao {
-    margin: 20px;
-    width: 235px;
-    height: 39px;
-    left: 359px;
-    top: 465px;
-    background: #76bb4c;
-    border-radius: 10px;
-  }
-  
-  .cadastro {
-    color: #000000;
-    margin-bottom: 20px;
-  }
-  
+  background-image: url(../../assets/img/background.png);
+  justify-content: center;
+}
+
+.imgLogo {
+  padding: 35px 35px 20px 35px;
+  max-width: 80%;
+}
+
+.cadastro {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
+  padding-bottom: 30px;
+}
+
+.botao {
+  font-size: 1.2rem;
+  color: black;
+  background-color: #76bb4c !important;
+  border: #76bb4c !important;
+  border-radius: 0.625rem;
+  text-align: center;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.cadastro {
+  color: #000000;
+  margin-bottom: 20px;
+}
