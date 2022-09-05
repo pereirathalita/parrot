@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
-import FormLogin from './components/Login';
+import TelaLogin from './components/Login';
+import TelaCadastro from './components/Cadastro';
 import "./assets/styles/global.scss";
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-     <FormLogin />
+      <TelaLogin />
     </div>
   )
 }
