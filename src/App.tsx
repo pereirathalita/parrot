@@ -1,27 +1,23 @@
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useState } from 'react';
-import TelaLogin from './components/Login';
-import TelaCadastro from './components/Cadastro';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState } from "react";
+import Cadastrar from "./view/Cadastrar";
+
 import "./assets/styles/global.scss";
-import Header from './components/Header';
+import TelaCadastro from "./components/Cadastro";
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const [count, setCount] = useState(0);
 
-    return (
-      <div>
-        {/* <TelaCadastro /> */}
-        <TelaLogin />
-      </div>
-      // <Router>
-      //   <Routes>
-      //     {/* <Route path="/" element={<Feed />} />
-      //     <Route path="/register" element={<Cadastro />} />
-      //     <Route path="/login" element={<Login />} />
-      //     <Route path="/profile" element={<Profile />} /> */}
-      //   </Routes>
-      // </Router>
-    );
+  return (
+    <div>
+      <Router>
+        <Routes>
+          {/* <Route path="/" element={<Feed />} /> */}
+          <Route path="/registro" element={<TelaCadastro />} />
+          {/* <Route path="/login" element={<Login />} /> */}
+          {/* <Route path="/profile" element={<Profile />} /> */}
+        </Routes>
+      </Router>
+    </div>
+  );
 }
-
-export default App;

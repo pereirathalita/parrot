@@ -21,7 +21,7 @@ function TelaLogin() {
            </Form.Group>
 
            <Form.Group className="mb-3 mt-4" controlId="formBasicPassword">
-             <Form.Control type="password" placeholder="password" />
+             <Form.Control type="password" placeholder="senha" />
            </Form.Group>
            <Form.Group className="mb-3 mt-4" controlId="formBasicName">
              <Form.Control className="botao" type="submit" value="entrar" />

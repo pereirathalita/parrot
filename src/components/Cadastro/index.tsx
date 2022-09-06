@@ -1,12 +1,11 @@
-import "../../components/Login";
-import "./styles.scss";
-import logo from "../../assets/img/logo-colorido.png";
-import { Button } from "react-bootstrap";
 import { Form } from "react-bootstrap";
 import { Card } from "react-bootstrap";
+import logo from "../../assets/img/logo-colorido.png";
+import "../../components/Login";
+import "./styles.scss";
 
 
-function TelaCadastro() {
+export default function TelaCadastro() {
   return (
     <main>
       <div className="container vh-100">
@@ -50,4 +49,3 @@ function TelaCadastro() {
   );
 }
 
-export default TelaCadastro;
