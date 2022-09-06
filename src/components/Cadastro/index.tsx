@@ -1,5 +1,4 @@
-import { Form } from "react-bootstrap";
-import { Card } from "react-bootstrap";
+import { Form, Card } from "react-bootstrap";
 import logo from "../../assets/img/logo-colorido.png";
 import "../../components/Login";
 import "./styles.scss";
@@ -11,7 +10,7 @@ export default function TelaCadastro() {
       <div className="container vh-100">
       <div className="row h-100 d-flex align-items-center justify-content-center">
         <div className="col-xs-10 col-sm-8 col-md-5">
-          <Card id="teste" className="shadow-sm text-center">
+          <Card id="card" className="shadow-sm text-center">
           <Card.Body>
             <Card.Img src={logo} alt="logo-login" className='logo-img pt-2'/>
           <h4 className='py-3'>CADASTRO</h4>

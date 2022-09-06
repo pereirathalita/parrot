@@ -1,1 +1,0 @@
-import TelaLogin from "../../components/Cadastro";
