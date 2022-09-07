@@ -10,7 +10,13 @@
   height: 5.8rem;
 }
 
+.texto {
+    resize: none; 
+}
+
 #botao-publicar {
+  width: 164px;
+ height: 28px;
   background: #6033aa;
   border: #6033aa;
   border-radius: 30px;

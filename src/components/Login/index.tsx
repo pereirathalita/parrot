@@ -1,8 +1,8 @@
+import { Link } from "react-router-dom";
 import "./styles.scss";
 import Logo from "../../assets/img/logo-colorido.png";
 import Form from "react-bootstrap/Form";
 import Card from "react-bootstrap/Card";
-// import TelaCadastro from "../Cadastro";
 
 function TelaLogin() {
   return (
@@ -25,7 +25,7 @@ function TelaLogin() {
            <Form.Group className="mb-3 mt-4" controlId="formBasicName">
              <Form.Control className="botao" type="submit" value="entrar" />
            </Form.Group>
-           <a href="#">cadastre-se</a>
+           <Link to="cadastro">cadastre-se</Link>
          </Form>
          </Card.Body>
           </Card>

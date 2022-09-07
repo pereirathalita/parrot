@@ -5,7 +5,7 @@ import "./styles.scss";
 
 
 export default function TelaCadastro() {
-  return (
+    return (
     <main className="bg-img">
       <div className="container vh-100">
       <div className="row h-100 d-flex align-items-center justify-content-center">
@@ -36,7 +36,7 @@ export default function TelaCadastro() {
            </Form.Group>
 
            <Form.Group className="mb-3 mt-4" controlId="formBasicName">
-             <Form.Control className="botao"  type="submit" value="entrar" />
+             <Form.Control className="botao"  type="submit" value="cadastrar" />
            </Form.Group>
          </Form>
          </Card.Body>
