@@ -1,0 +1,21 @@
+@import "../../assets/styles/global.scss";
+
+.card {
+  border-top: none;
+  border-radius: 0;
+}
+
+.perfil-img {
+  width: 6rem;
+  height: 5.8rem;
+}
+
+#botao-publicar {
+  background: #6033aa;
+  border: #6033aa;
+  border-radius: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}

@@ -1,10 +1,9 @@
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
+import { Button, Card, FloatingLabel, Form } from "react-bootstrap";
 import perfil from "../../assets/img/profile.png";
 import Header from "../Header";
 import "./styles.scss"
 
-export default function PerfilUsuario() {
+export default function Feed() {
   return (
     <div>
       <Header />
@@ -12,16 +11,13 @@ export default function PerfilUsuario() {
         <Card id="card" className="w-50 shadow-sm text-center">
           <Card.Body className="d-flex justify-content-around">
             <Card.Img src={perfil} alt="perfil" className="perfil-img pt-2" />
-            <Card.Text>
-                <p>Nome e Sobrenome</p>
-                <p>apartamento</p>
-                <p>email</p>
-            </Card.Text>
+            <FloatingLabel label="Comments" className="mb-3">
+        <Form.Control as="textarea" placeholder="Leave a comment here" />
+      </FloatingLabel>
             <div className="justify-content-end">
-            <Button id="botao">editar perfil</Button>
+            <Button id="botao-publicar">publicar</Button>
             </div>
           </Card.Body>
-
         </Card>
       </div>
     </div>

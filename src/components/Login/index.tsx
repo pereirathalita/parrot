@@ -6,7 +6,7 @@ import Card from "react-bootstrap/Card";
 
 function TelaLogin() {
   return (
-    <main>
+    <main className="bg-img">
       <div className="container vh-100">
       <div className="row h-100 d-flex align-items-center justify-content-center">
         <div className="col-xs-10 col-sm-8 col-md-5">

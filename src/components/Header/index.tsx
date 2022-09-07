@@ -1,10 +1,6 @@
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
+import { Button, Form, Container, Navbar } from 'react-bootstrap';
 import "./styles.scss"
 import Logo from "../../assets/img/logo-horizontal-colorido.png";
-
 
 export default function Header() {
       return (
@@ -14,7 +10,8 @@ export default function Header() {
             <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
             <Navbar.Text>
-                <span className="user-text">Olá Usuário | </span> <a href="#login">sair</a>
+                <span className="usuario-header user-text">Olá Usuário | </span> 
+                <a className="sair-header" href="#login">sair</a>
               </Navbar.Text>
             </Navbar.Collapse>
           </Container>
