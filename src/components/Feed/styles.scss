@@ -6,17 +6,19 @@
 }
 
 .perfil-img {
-  width: 6rem;
-  height: 5.8rem;
+  width: 5rem;
+  height: 5.2rem;
 }
 
 .texto {
-    resize: none; 
+  border: 1px solid #8bc34a !important;
+  border-radius: 10px !important;
+  resize: none;
 }
 
 #botao-publicar {
   width: 164px;
- height: 28px;
+  height: 28px;
   background: #6033aa;
   border: #6033aa;
   border-radius: 30px;

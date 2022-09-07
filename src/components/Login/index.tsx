@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
-import "./styles.scss";
+import { Form, Card } from "react-bootstrap";
 import Logo from "../../assets/img/logo-colorido.png";
-import Form from "react-bootstrap/Form";
-import Card from "react-bootstrap/Card";
+import "./styles.scss";
 
 function TelaLogin() {
   return (
@@ -18,7 +17,6 @@ function TelaLogin() {
            <Form.Group className="mb-3 mt-4" controlId="formBasicEmail">
              <Form.Control type="email" placeholder="email" />
            </Form.Group>
-
            <Form.Group className="mb-3 mt-4" controlId="formBasicPassword">
              <Form.Control type="password" placeholder="senha" />
            </Form.Group>
