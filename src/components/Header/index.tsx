@@ -16,9 +16,7 @@ export default function Header() {
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
             <span className="usuario-header user-text">Olá, {params.nome} | </span>
-            <Link className="sair-header" to="/">
-              sair
-            </Link>
+            <Link className="sair-header" to="/">sair</Link>
           </Navbar.Text>
         </Navbar.Collapse>
       </Container>
