@@ -1,9 +1,23 @@
 import { Button, Card, FloatingLabel, Form } from "react-bootstrap";
+import { useState, FormEvent } from "react";
+import { feed } from "../../services/MainApi/feed"; 
 import perfil from "../../assets/img/profile.png";
 import Header from "../Header";
 import "./styles.scss";
 
 export default function Feed() {
+  const [mensagem, setMensagem] = useState<string>("");
+
+  const submit = async (event: FormEvent) => {
+    event.preventDefault();
+    try {
+      const response = await feed({ mensagem });
+      console.log(response.data);
+      alert("Sua mensagem foi enviada");
+    } catch (error) {
+      alert("Ops, deu algo errado :(");
+    }
+  };
   return (
     <div>
       <Header />
@@ -18,7 +32,9 @@ export default function Feed() {
               <Form.Control
                 className="texto"
                 as="textarea"
-                placeholder="Leave a comment here"
+                placeholder="Deixe sua mensagem aqui"
+                value={mensagem}
+                onChange={(e) => setMensagem(e.target.value)}
               />
             </FloatingLabel>
             <div className="justify-content-end">

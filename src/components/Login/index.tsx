@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { Form, Card } from "react-bootstrap";
 import { FormEvent, useState } from "react";
+import { login } from "../../services/MainApi/login";
 import Logo from "../../assets/img/logo-colorido.png";
 import "./styles.scss";
-import { login } from "../../services/MainApi/login";
 
 export default function TelaLogin() {
   const [email, setEmail] = useState<string>("");
