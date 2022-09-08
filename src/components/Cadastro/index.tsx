@@ -28,10 +28,7 @@ export default function TelaCadastro() {
              <Form.Control type="password" placeholder="confirmar senha" />
            </Form.Group>
            <Form.Group className="mb-3 mt-4" controlId="formBasicName">
-             <Form.Control type="name" placeholder="unidade/apartamento" />
-           </Form.Group>
-           <Form.Group className="mb-3 mt-4" controlId="formBasicName">
-             <Form.Control type="name" placeholder="link da foto" />
+             <Form.Control type="unidade" placeholder="unidade/apartamento" />
            </Form.Group>
            <Form.Group className="mb-3 mt-4" controlId="formBasicName">
              <Form.Control className="botao"  type="submit" value="cadastrar" />

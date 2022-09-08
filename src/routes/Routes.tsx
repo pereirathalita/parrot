@@ -8,7 +8,7 @@ export default function RoutesApp() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<TelaLogin />} />
+        <Route path="/login" element={<TelaLogin />} />
         <Route path="/cadastro" element={<TelaCadastro />} />
         <Route path="/perfil" element={<PerfilUsuario />} />
         <Route path="/feed/:nome" element={<Feed />} />
