@@ -1,5 +1,6 @@
 import { Form, Card } from "react-bootstrap";
 import { useState } from "react";
+import { cadastro } from "../";
 import logo from "../../assets/img/logo-colorido.png";
 import "../../components/Login";
 import "./styles.scss";
@@ -11,6 +12,30 @@ export default function TelaCadastro() {
   const [senha, setSenha] = useState<string>("");
   const [confirmarSenha, setConfirmarSenha] = useState<string>("");
   const [apartamento, setApartamento] = useState<string>("");
+
+  const cadastro = async (e) => {
+    e.preventDefault();
+
+    const payload = {
+      nome,
+      email,
+      senha,
+      confirmarSenha,
+      apartamento
+    };
+
+    try {
+      const response = await TelaCadastro(payload);
+      if(response.status !==201) {
+        return alert("Ops, algo deu errado")
+      }
+
+      alert("Cadastro efetuado com sucesso :)")
+    } catch (error) {
+      return alert("Ops, algo deu errado")
+    }
+  }
+
   return (
     <main className="bg-img">
       <div className="container vh-100">

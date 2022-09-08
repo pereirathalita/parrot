@@ -1,7 +1,7 @@
 import { Button, Card, FloatingLabel, Form } from "react-bootstrap";
 import { useState, FormEvent } from "react";
-import { feed } from "../../services/MainApi/feed"; 
-import perfil from "../../assets/img/profile.png";
+import { feed } from "../../services/MainApi/feed";
+import Foto from "../../assets/img/profile.png";
 import Header from "../Header";
 import "./styles.scss";
 
@@ -23,34 +23,38 @@ export default function Feed() {
       <Header />
       <div className="d-flex justify-content-center">
         <Card
-          id="card"
-          className="w-50 shadow-sm text-center justify-content-end"
+          id="card-perfil"
+          className="d-flex flex-row justify-content-around w-50 pt-4"
         >
-          <Card.Body className="">
-            <Card.Img src={perfil} alt="perfil" className="perfil-img pt-2" />
-            <FloatingLabel label="" className="mb-3">
-              <Form.Control
-                className="texto"
-                as="textarea"
-                placeholder="Deixe sua mensagem aqui"
-                value={mensagem}
-                onChange={(e) => setMensagem(e.target.value)}
-              />
-            </FloatingLabel>
-            <div className="justify-content-end">
-              <Button id="botao-publicar">publicar</Button>
-            </div>
+          <Card.Body className="form-post card-feed d-flex align-items-center flex-wrap">
+            <img src={Foto} alt="foto-de-perfil" className="foto-perfil me-4" />
+            <Form.Control
+              className=""
+              as="textarea"
+              placeholder="Deixe sua mensagem aqui"
+              value={mensagem}
+              onChange={(e) => setMensagem(e.target.value)}
+            />
+            <Button
+              id="editar-button"
+              className="ms-auto me-5 px-5 mt-2 align-self-end"
+            >
+              publicar
+            </Button>
           </Card.Body>
         </Card>
       </div>
       <div className="d-flex justify-content-center">
-        <Card id="card" className="d-flex w-50 shadow-sm text-center">
-          <Card.Body className="justify-content-around">
-            <Card.Img src={perfil} alt="perfil" className="perfil-img pt-2" />
-            <Card.Text>
-              <p>Nome</p>
+        <Card
+          id="card-post"
+          className="d-flex flex-row justify-content-around w-50"
+        >
+          <Card.Body className="d-flex justify-content-around align-items-center card-post">
+            <img src={Foto} alt="foto-de-perfil" className="foto-perfil me-3" />
+            <Card.Text className="mt-2 ms-2">
+              <p className="nome-publi">Nome</p>
               <p>apartamento</p>
-              <p>data</p>
+              <p className="data-publi">data</p>
               <p>
                 Poxa galera, vamos respeitar o horário de silêncio! Tinha alguém
                 usando furadeira 2 HORAS DA MANHÃ!!! ó_ó
@@ -60,13 +64,16 @@ export default function Feed() {
         </Card>
       </div>
       <div className="d-flex justify-content-center">
-        <Card id="card" className="d-flex w-50 shadow-sm text-center">
-          <Card.Body className="justify-content-around">
-            <Card.Img src={perfil} alt="perfil" className="perfil-img pt-2" />
-            <Card.Text>
-              <p>Nome</p>
+        <Card
+          id="card-post"
+          className="d-flex flex-row justify-content-around w-50"
+        >
+          <Card.Body className="d-flex justify-content-around align-items-center card-post">
+            <img src={Foto} alt="foto-de-perfil" className="foto-perfil me-3" />
+            <Card.Text className="mt-2 ms-2">
+              <p className="nome-publi">Nome</p>
               <p>apartamento</p>
-              <p>data</p>
+              <p className="data-publi">data</p>
               <p>
                 Contratei um personal trainer e quero um parceiro pra fazer
                 treinos semanais e dividir o custo, quem anima? :D
@@ -76,13 +83,16 @@ export default function Feed() {
         </Card>
       </div>
       <div className="d-flex justify-content-center">
-        <Card id="card" className="d-flex w-50 shadow-sm text-center">
-          <Card.Body className="justify-content-around">
-            <Card.Img src={perfil} alt="perfil" className="perfil-img pt-2" />
-            <Card.Text>
-              <p>Nome</p>
+        <Card
+          id="card-post"
+          className="d-flex flex-row justify-content-around w-50"
+        >
+          <Card.Body className="d-flex justify-content-around align-items-center card-post">
+            <img src={Foto} alt="foto-de-perfil" className="foto-perfil me-3" />
+            <Card.Text className="mt-2 ms-2">
+              <p className="nome-publi">Nome</p>
               <p>apartamento</p>
-              <p>data</p>
+              <p className="data-publi">data</p>
               <p>
                 Alô vizinhos, acabei de me mudar e vou fazer uma festinha no
                 sábado ás 18h, espero vocês!
@@ -92,13 +102,16 @@ export default function Feed() {
         </Card>
       </div>
       <div className="d-flex justify-content-center">
-        <Card id="card" className="d-flex w-50 shadow-sm text-center">
-          <Card.Body className="justify-content-around">
-            <Card.Img src={perfil} alt="perfil" className="perfil-img pt-2" />
-            <Card.Text>
-              <p>Nome</p>
+        <Card
+          id="card-post"
+          className="d-flex flex-row justify-content-around w-50"
+        >
+          <Card.Body className="d-flex justify-content-around align-items-center card-post">
+            <img src={Foto} alt="foto-de-perfil" className="foto-perfil me-3" />
+            <Card.Text className="mt-2 ms-2">
+              <p className="nome-publi">Nome</p>
               <p>apartamento</p>
-              <p>data</p>
+              <p className="data-publi">data</p>
               <p>
                 AAAAAAA tô fazendo um bolo e esqueci de comprar açucar, rs
                 alguém tem um pouco pra me trazer? Pode até levar uma parte do

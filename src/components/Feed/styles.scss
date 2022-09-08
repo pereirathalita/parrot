@@ -1,29 +1,81 @@
 @import "../../assets/styles/global.scss";
 
-.card {
+#card-perfil{
+  border-radius: 0px !important;
   border-top: none;
-  border-radius: 0;
 }
 
-.perfil-img {
-  width: 5rem;
-  height: 5.2rem;
+#card-post{
+  border-radius: 0px !important;
+  border-top: none;
 }
 
-.texto {
-  border: 1px solid #8bc34a !important;
-  border-radius: 10px !important;
+.form-post{
+  border-color: #8BC34A !important;
+  border-radius: .625rem !important;
+  width: 80%;
   resize: none;
 }
 
-#botao-publicar {
-  width: 164px;
-  height: 28px;
-  background: #6033aa;
-  border: #6033aa;
-  border-radius: 30px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
+#nome-perfil{
+  font-size: 1.25rem;
+  color:#76BB4C;
 }
+
+.nome-publi{
+  font-size: 1rem;
+  color: #76BB4C;
+}
+
+.data-publi{
+  font-size: 0.8rem;
+  color: #909090;
+}
+
+#editar-button{
+  background-color: #6033AA;
+  border: #76BB4C;
+  border-radius: 1.875rem;
+  padding: 0.10rem 0;
+}
+
+
+@media (max-width: 1025px) {
+  .card-feed {
+      justify-content: center;
+      align-items: center;
+  }
+
+  .foto-perfil{
+      margin: 0 !important;
+      margin-bottom: 0.5rem !important;
+      margin-right: 1rem !important;
+  }
+
+  #editar-button{
+      margin: 0 !important;
+      margin-top: 0.5rem !important;
+  }
+}
+
+@media (max-width: 740px){
+  .foto-perfil{
+      margin: 0 !important;
+      margin-bottom: 0.5rem !important;
+  }
+}
+
+@media (max-width: 582px) {
+  .card-post {
+      display: flex;
+      flex-wrap: wrap !important;
+  }
+}
+
+@media (max-width: 350px) {
+  #editar-button {
+      padding: 0 1rem !important;
+  }
+}
+
+
