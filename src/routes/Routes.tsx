@@ -12,7 +12,7 @@ export default function RoutesApp() {
         <Route path="/auth/login" element={<TelaLogin />} />
         <Route path="/cadastro" element={<TelaCadastro />} />
         <Route path="/editar" element={<EditarCadastro />} />
-        <Route path="/perfil" element={<PerfilUsuario />} />
+        <Route path="/perfil/:id" element={<PerfilUsuario />} />
         <Route path="/feed" element={<Feed />} />
       </Routes>
     </div>

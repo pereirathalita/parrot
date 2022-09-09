@@ -1,24 +1,40 @@
 @import "../../assets/styles/global.scss";
 
-.card {
-    border-top: none !important;
-    border-radius: 0 !important;
+#card-perfil{
+    border-radius: 0px !important;
+    border-top: none;
 }
 
-
-.perfil-img {
-    width: 6rem !important;
-    height: 5.8rem !important;
+#card-post{
+    border-radius: 0px !important;
+    border-top: none;
 }
 
-#botao {
-    background: #76BB4C !important;
-    border: #76BB4C !important;
-    border-radius: 30px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    text-align: center;
-    margin: 5px;
+#nome-perfil{
+    font-size: 1.25rem;
+    color:#76BB4C;
+}
+
+.nome-publi{
+    font-size: 1rem;
+    color: #76BB4C;
+}
+
+.data-publi{
+    font-size: 0.8rem;
+    color: #909090;
+}
+
+#editar-button-perfil{
+    background-color: #76BB4C;
+    border: #76BB4C;
+    border-radius: 1.875rem;
+    padding: 0.25rem 0;
+}
+
+@media (max-width: 582px) {
+    .card-post {
+        display: flex;
+        flex-wrap: wrap !important;
+    }
 }

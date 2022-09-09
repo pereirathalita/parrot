@@ -10,7 +10,7 @@ export function login(payload: LoginPayload){
 export function authRoute(token: string){
     return baseApi.get("/user/info"), {
         headers: {
-            "Authorization": `auth ${token}`,
+            'Authorization': `auth ${token}`,
         },
     };
 }
