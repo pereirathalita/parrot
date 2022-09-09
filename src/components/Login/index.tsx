@@ -70,7 +70,7 @@ export default function TelaLogin() {
                       onChange={(e) => setPassword(e.target.value)}
                     />
                   </Form.Group>
-                  <Form.Group className="mb-3 mt-4" controlId="formBasicName">
+                  <Form.Group className="mb-3 mt-4">
                     <Button className="botao" type="submit">
                       entrar
                     </Button>

@@ -6,7 +6,13 @@ import "../Perfil/styles.scss";
 import { useEffect, useState, useCallback } from "react";
 import { useParams } from "react-router-dom";
 
-export default function Perfil() {
+export default function PerfilUsuario() {
+  // useEffect(() => {
+  //   if (!window.localStorage.getItem("token")) {
+  //     window.location.pathname = "/auth/login";
+  //   }
+  // }, []);
+
   const [usuarios, setUsuarios] = useState();
 
   const { id } = useParams();
@@ -25,17 +31,6 @@ export default function Perfil() {
 
 
   const [usuariosPost, setUsuariosPost] = useState([]);
-
-  // useEffect (() => {
-  //   const getData = async () => {
-  //     try {
-  //       const response = await listar
-  //     } catch (error) {
-        
-  //     }
-  //   }
-  // })
-
 
   return (
     <div>

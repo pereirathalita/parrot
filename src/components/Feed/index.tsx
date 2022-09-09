@@ -37,7 +37,6 @@ export default function Feed() {
             <Form.Control
               className="form-post"
               as="textarea"
-              placeholder=""
               value={mensagem}
               onChange={(e) => setMensagem(e.target.value)}
             />
