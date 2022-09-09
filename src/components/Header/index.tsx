@@ -36,8 +36,7 @@ export default function Header() {
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
             <span className="usuario-header user-text">Olá, {user.email} | </span>
-            <Link className="sair-header" to="/perfil">perfil</Link>
-            <br />
+            {/* <Link className="editar-header" to="/perfil">perfil</Link> */}
             <Link className="sair-header" to="/auth/login">sair</Link>
           </Navbar.Text>
         </Navbar.Collapse>

@@ -25,8 +25,8 @@ export default function PerfilUsuario() {
               <p>apartamento</p>
               <p>email</p>
             </Card.Text>
-            <div className="justify-content-end">
-            <Link className="sair-header" to="/editar">editar perfil</Link>
+            <div className="mb-3 mt-4 ms-auto me-5 px-4 mt-2 ">
+            <Link className="botao" to="/editar">editar perfil</Link>
             </div>
           </Card.Body>
         </Card>

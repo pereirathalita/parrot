@@ -32,12 +32,12 @@ export default function Feed() {
           id="card-perfil"
           className="d-flex flex-row justify-content-around w-50 pt-4"
         >
-          <Card.Body className="form-post card-feed d-flex align-items-center flex-wrap">
+          <Card.Body className="card-feed d-flex align-items-center flex-wrap">
             <img src={Foto} alt="foto-de-perfil" className="foto-perfil me-4" />
             <Form.Control
-              className=""
+              className="form-post"
               as="textarea"
-              placeholder="Deixe sua mensagem aqui"
+              placeholder=""
               value={mensagem}
               onChange={(e) => setMensagem(e.target.value)}
             />
