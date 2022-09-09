@@ -1,17 +1,17 @@
 import baseApi from "./api";
 
 interface CadastroPayload {
-    nome: string;
+    name: string;
     email: string;
-    senha: string;
-    confirmarSenha: string;
-    apartamento: number;
+    apartment: number;
+    password: string;
+    // confirmarSenha: string;
 }
 export function cadastroUsuario(payload: CadastroPayload) {
-    return baseApi.post("/cadastro", payload);
+    return baseApi.post("/user/", payload);
 };
 
 export function listarUsuario() {
-    return baseApi.post("/cadastro");
+    return baseApi.post("/user");
 }
 

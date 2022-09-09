@@ -5,5 +5,5 @@ interface LoginPayload {
     senha: string;
 }
 export function login(payload: LoginPayload){
-    return api.post("/login", payload);
+    return baseApi.post("/login", payload);
 }

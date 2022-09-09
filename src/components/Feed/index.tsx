@@ -1,23 +1,29 @@
 import { Button, Card, FloatingLabel, Form } from "react-bootstrap";
-import { useState, FormEvent } from "react";
+import { useState, FormEvent, useEffect } from "react";
 import { feed } from "../../services/MainApi/feed";
 import Foto from "../../assets/img/profile.png";
 import Header from "../Header";
 import "./styles.scss";
 
 export default function Feed() {
-  const [mensagem, setMensagem] = useState<string>("");
-
-  const submit = async (event: FormEvent) => {
-    event.preventDefault();
-    try {
-      const response = await feed({ mensagem });
-      console.log(response.data);
-      alert("Sua mensagem foi enviada");
-    } catch (error) {
-      alert("Ops, deu algo errado :(");
+  useEffect(() => {
+    if (!window.localStorage.getItem("token")) {
+      window.location.pathname = "/auth/login";
     }
-  };
+  }, []);
+  
+  
+  //const [mensagem, setMensagem] = useState<string>("");
+  // const submit = async (event: FormEvent) => {
+  //   event.preventDefault();
+  //   try {
+  //     const response = await feed({ mensagem });
+  //     console.log(response.data);
+  //     alert("Sua mensagem foi enviada");
+  //   } catch (error) {
+  //     alert("Ops, deu algo errado :(");
+  //   }
+
   return (
     <div>
       <Header />
@@ -32,8 +38,8 @@ export default function Feed() {
               className=""
               as="textarea"
               placeholder="Deixe sua mensagem aqui"
-              value={mensagem}
-              onChange={(e) => setMensagem(e.target.value)}
+              // value={mensagem}
+              // onChange={(e) => setMensagem(e.target.value)}
             />
             <Button
               id="editar-button"
@@ -83,7 +89,7 @@ export default function Feed() {
         </Card>
       </div>
       <div className="d-flex justify-content-center">
-        <Card
+      <Card
           id="card-post"
           className="d-flex flex-row justify-content-around w-50"
         >
@@ -94,15 +100,15 @@ export default function Feed() {
               <p>apartamento</p>
               <p className="data-publi">data</p>
               <p>
-                Alô vizinhos, acabei de me mudar e vou fazer uma festinha no
-                sábado ás 18h, espero vocês!
+                Contratei um personal trainer e quero um parceiro pra fazer
+                treinos semanais e dividir o custo, quem anima? :D
               </p>
             </Card.Text>
           </Card.Body>
         </Card>
       </div>
       <div className="d-flex justify-content-center">
-        <Card
+      <Card
           id="card-post"
           className="d-flex flex-row justify-content-around w-50"
         >
@@ -113,9 +119,8 @@ export default function Feed() {
               <p>apartamento</p>
               <p className="data-publi">data</p>
               <p>
-                AAAAAAA tô fazendo um bolo e esqueci de comprar açucar, rs
-                alguém tem um pouco pra me trazer? Pode até levar uma parte do
-                bolo se quiser haha
+                Contratei um personal trainer e quero um parceiro pra fazer
+                treinos semanais e dividir o custo, quem anima? :D
               </p>
             </Card.Text>
           </Card.Body>

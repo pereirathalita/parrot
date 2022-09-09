@@ -2,8 +2,8 @@ import baseApi from "./api";
 
 interface LoginPayload {
     email: string;
-    senha: string;
+    password: string;
 }
 export function login(payload: LoginPayload){
-    return baseApi.post("/login", payload);
+    return baseApi.post("/auth/login", payload);
 }
