@@ -8,12 +8,12 @@ import "./styles.scss";
 export default function Feed() {
   useEffect(() => {
     if (!window.localStorage.getItem("token")) {
-      window.location.pathname = "/auth/login";
+      window.location.pathname = "/feed"
     }
   }, []);
-  
-  
-  //const [mensagem, setMensagem] = useState<string>("");
+
+  const [mensagem, setMensagem] = useState<string>("");
+
   // const submit = async (event: FormEvent) => {
   //   event.preventDefault();
   //   try {
@@ -38,8 +38,8 @@ export default function Feed() {
               className=""
               as="textarea"
               placeholder="Deixe sua mensagem aqui"
-              // value={mensagem}
-              // onChange={(e) => setMensagem(e.target.value)}
+              value={mensagem}
+              onChange={(e) => setMensagem(e.target.value)}
             />
             <Button
               id="editar-button"

@@ -12,15 +12,15 @@ export default function Header() {
   const [usuarios, setUsuarios] = useState();
   const user = useSelector((store: RootStore) => store.userReduce);
 
-  const { id } = useParams();
+  const { token } = useParams();
 
   const fetchUser = useCallback(async () => {
-    const response = await baseApi(`/info/${id}`).then((res) => {
+    const response = await baseApi(`/info/${token}`).then((res) => {
       return res.data;
     });
 
     setUsuarios(response);
-  }, [setUsuarios, id]);
+  }, [setUsuarios, token]);
 
   useEffect(() => {
     fetchUser();
@@ -36,7 +36,9 @@ export default function Header() {
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
             <span className="usuario-header user-text">Olá, {user.email} | </span>
-            <Link className="sair-header" to="/">sair</Link>
+            <Link className="sair-header" to="/perfil">perfil</Link>
+            <br />
+            <Link className="sair-header" to="/auth/login">sair</Link>
           </Navbar.Text>
         </Navbar.Collapse>
       </Container>

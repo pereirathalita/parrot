@@ -1,10 +1,18 @@
+import { useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { Link } from "react-router-dom";
 import perfil from "../../assets/img/profile.png";
 import Header from "../Header";
 import "./styles.scss";
 
 export default function PerfilUsuario() {
+  useEffect(() => {
+    if (!window.localStorage.getItem("token")) {
+      window.location.pathname = "/auth/login";
+    }
+  }, []);
+
   return (
     <div>
       <Header />
@@ -18,7 +26,7 @@ export default function PerfilUsuario() {
               <p>email</p>
             </Card.Text>
             <div className="justify-content-end">
-              <Button id="botao">editar perfil</Button>
+            <Link className="sair-header" to="/editar">editar perfil</Link>
             </div>
           </Card.Body>
         </Card>

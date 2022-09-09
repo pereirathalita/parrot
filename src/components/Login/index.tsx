@@ -21,7 +21,6 @@ export default function TelaLogin() {
       const response = await login({ email, password });
 
       window.localStorage.setItem("token", response.data.token);
-      window.localStorage.setItem("id", response.data.id);
 
       dispatch(
         setUser({
@@ -32,11 +31,7 @@ export default function TelaLogin() {
       );
 
       navigate("/feed");
-      alert("Login efetuado com sucesso :)");
-      // verificar o id
-      // return (
-      //   window.location.href="/feed"
-      // )
+
     } catch (error) {
       alert("Ops, deu algo errado :(");
     }

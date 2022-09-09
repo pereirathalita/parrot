@@ -16,6 +16,7 @@ const userReduce = createSlice({
       Object.assign(state, {
         token: action.payload.token,
         email: action.payload.email,
+        name: action.payload.name,
         isLogged: true,
       });
     },

@@ -3,10 +3,10 @@ import { Form, Card } from "react-bootstrap";
 import { FormEvent, useState } from "react";
 import { cadastroUsuario } from "../../services/MainApi/cadastro";
 import logo from "../../assets/img/logo-colorido.png";
-import "../../components/Login";
+import "../Login";
 import "./styles.scss";
 
-export default function TelaCadastro() {
+export default function editarCadastro() {
   const [name, setNome] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [apartment, setApartamento] = useState<string>("");
@@ -28,7 +28,7 @@ export default function TelaCadastro() {
       })
       
       alert("Cadastro efetuado com sucesso");
-      navigate("/auth/login");
+      navigate("/perfil");
     } catch (error) {
       console.log(error)
       alert("Ops, algo deu errado");
@@ -48,7 +48,7 @@ export default function TelaCadastro() {
                   alt="logo-login"
                   className="logo-img pt-2"
                 />
-                <h4 className="py-3">CADASTRO</h4>
+                <h4 className="py-3">EDITAR PERFIL</h4>
                 <Form className="container w-75" onSubmit={cadastro}>
                   <Form.Group className="mb-3 mt-4" controlId="formBasicEmail">
                     <Form.Control
@@ -65,7 +65,7 @@ export default function TelaCadastro() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                     />
-                  </Form.Group>
+                   </Form.Group>
                   <Form.Group className="mb-3 mt-4">
                     <Form.Control
                       type="password"
